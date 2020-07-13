@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {margin: 0; padding: 0;}
+body {
+    overflow-x: hidden;
+}
+#cabecalho {
+    color: rgba(31, 245, 31, 0.952);
+    font-family: 'Galada', cursive;
+    background-image: url('https://revistaembarque.com/wp-content/uploads/2014/08/sistema_solar_-_reproducao.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-height: 600px;
+    min-height: 370px;
+    margin-bottom: 30px;
+    animation-name: espaco;
+    animation-duration: 4s;
+}
+@keyframes espaco {
+    from {
+        background-image: url('https://timeline.canaltech.com.br/313573.1400/telescopio-canadense-capta-sinais-repetitivos-de-radio-vindos-do-espaco-sideral.jpg');
+    }
+    to {
+        background-image: url('https://istoeincrivel.com/wp-content/uploads/2019/12/tecido-estampado-universo-galaxia-100-cm-x-70-cm-shorts-estampa-universo-1140x614.jpg');
+    }
+    50% {
+        background-image: url('https://revistaembarque.com/wp-content/uploads/2014/08/sistema_solar_-_reproducao.jpg');
+    }
+    100% {
+        background-image: url('https://timeline.canaltech.com.br/313573.1400/telescopio-canadense-capta-sinais-repetitivos-de-radio-vindos-do-espaco-sideral.jpg');
+    }
+}
+#cabecalho h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 210px;
+    text-shadow: 7px 10px 3px #737467;
+    font-size: 5vh;
+}
+#cabecalho p {
+    font-size: 2vh;
+    text-shadow: 7px 10px 3px #daddb3;
+    position: relative;
+    top: 200px;
+    left: 75px;
+}
+main p {
+    margin-bottom: 20px;
+}
+::selection {
+    background-color: #000000;
+    color: #5b7a60;
+}
+main {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: justify;
+    margin: auto;
+    text-justify: inter-word;
+    max-width: 800px;
+    min-width: 400px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    border-bottom: 3px solid #606060;
+}
+img {
+    width: 600px;
+    border-radius: 7%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 5px;
+}
+figcaption {
+    font-size: 12px;
+}
+img:hover {
+    padding: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+p {
+    margin-bottom: 20px;
+}
+h3 {
+    margin-bottom: 15px;
+}
+:root {
+    --font-cabecalho: 19px;
+}
+#link-home {
+    position: absolute;
+    left: 120px;
+    top: 178px;
+    font-size: var(--font-cabecalho);
+}
+#link-flex-box {
+    position: relative;
+    left: 230px;
+    top: 107px;
+    font-size: var(--font-cabecalho);
+}
+#link-contatos {
+    position: relative;
+    left: 470px;
+    top: 77px;
+    font-size: var(--font-cabecalho);
+}
+.materia {
+    color: #0000ff;
+    text-shadow: 7px 6px 10px #e3f800;
+}
+.materia:link {
+    text-decoration: none;
+}
+.materia:visited {
+    color: #800080;
+}
+.materia:hover {
+    text-decoration: underline;
+    text-shadow: 2px 12px 2px rgba(141, 128, 14, 0.908);
+}
+.materia:active {
+    color: #ffffff;
+}
+.materia::before {
+    content: " ";
+}
+/* Estado inicial do link */
+.links-cabecalho:link {
+    text-decoration: none;
+    color: rgba(66, 255, 66, 0.908);
+    text-shadow: 7px 6px 10px #e3f800;
+}
+.links-cabecalho:visited {
+    color: #3dff3d;
+}
+/* Quando o mouse passar por cima */
+.links-cabecalho:hover {
+    text-decoration: underline;
+    text-shadow: 2px 12px 2px rgba(66, 255, 66, 0.908);
+}
+/* Na hora que o link for clicado ou ativado */
+.links-cabecalho:active {
+    background-color: #0f75c9;
+    color: #ffffff;
+}
+ul li {
+    list-style: none;
+}
+#linear-Gradiente {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2vh;
+    line-height: 1.5em;
+    margin: 15px 320px 0px 320px;
+}
+#container1 {
+    padding: 5px 0px 5px 7px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid green;
+    border-radius: 12px;
+    background-image: linear-gradient(to right, rgb(218, 208, 208), rgb(150, 70, 70));
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    animation-name: container1;
+    animation-duration: 5s;
+    box-shadow: 2px 0px 6px 7px #5b7a60;
+}
+@keyframes container1 {
+    from {
+        background-image: linear-gradient(to right, rgb(218, 208, 208), rgb(150, 70, 70));
+    }
+    to{
+        background-image: linear-gradient(to left, #d8dac1, #fcc67a);
+    }
+    0% {
+        background-image: linear-gradient(to right, rgb(114, 111, 81), rgb(224, 212, 212));
+    }
+    25% {
+        background-image: linear-gradient(to left, rgb(81, 114, 91), rgb(22, 63, 9));
+    }
+    50% {
+        background-image: linear-gradient(to right, rgb(47, 63, 52), rgb(68, 230, 19));
+    }
+    100% {
+        background-image: linear-gradient(to right, #008000, #ffff00);
+    }
+}
+#container1:hover {
+    padding: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-image: linear-gradient(to left, #d8dac1, #fcc67a);
+}
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: rgb(44, 61, 51);
+    border-radius: 12px;
+}
+.flex-box {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2vh;
+    line-height: 1.5em;
+    margin: 25px 300px 25px 300px;
+    text-align: center;
+    border-top: 3px solid #606060;
+}
+#container2 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    padding-right: 10px;
+    flex-direction: row-reverse;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+#container3 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+#container4 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+#container5 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+#container6 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10px;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+#container7 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 10px;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+#container8 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+#container9 {
+    border: 2px solid green;
+    border-radius: 12px;
+    margin: 15px 200px 15px 200px;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    box-shadow: 3px 0px 10px 6px rgba(103, 136, 25, 0.726);
+}
+:root {
+    --pra-baixo: 80px;
+}
+#lucas-email {
+    position: relative;
+    right: 120px;
+}
+#footer-section1 {
+    position: relative;
+    left: 120px;
+    bottom: var(--pra-baixo);
+}
+#footer-section2 {
+    position: relative;
+    left: 100px;
+    bottom: var(--pra-baixo);
+    padding: 0px 32px 0px 48px;
+}
+#footer-section3 {
+    position: relative;
+    left: 170px;
+    bottom: var(--pra-baixo);
+}
+.section-footer {
+    border-right: 2px solid #ffffff;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* Referencias */
+.referencias:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.referencias:visited {
+    color: #3dff3d;
+}
+.referencias:hover {
+    text-decoration-color: underline #5b7a60;
+    text-shadow: 2px 12px 13px #5b7a60;
+}
+.referencias:active {
+    background-color: aquamarine;
+}
+/* Redes socias */
+.redes-sociais:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.redes-sociais:visited {
+    color: #3dff3d;
+}
+.redes-sociais:hover {
+    text-decoration-color: underline #5b7a60;
+    text-shadow: 2px 12px 13px #5b7a60;
+}
+footer {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+    padding-top: 175px;
+    padding-right: 120px;
+    padding-bottom: 180px;
+    padding-left: 122px;
+    display: flex;
+    flex-direction: row;
+    background-color: #505050;
+    color: #ffffff;
+    max-width: 100%;
+    min-width: 50%;
+}

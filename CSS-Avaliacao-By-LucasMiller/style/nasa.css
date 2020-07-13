@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {margin: 0; padding: 0;}
+body {
+    overflow-x: hidden;
+}
+#cabecalho {
+    color: rgba(31, 245, 31, 0.952);
+    font-family: 'Galada', cursive;
+    /* Vai terminar com essa img */
+    background-image: url('https://revistaembarque.com/wp-content/uploads/2014/08/sistema_solar_-_reproducao.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-height: 600px;
+    min-height: 370px;
+    margin-bottom: 30px;
+    animation-name: espaco-sideral;
+    animation-duration: 4s;
+}
+@keyframes espaco-sideral {
+    form {
+        background-image: url('https://timeline.canaltech.com.br/313573.1400/telescopio-canadense-capta-sinais-repetitivos-de-radio-vindos-do-espaco-sideral.jpg');
+    }
+    to {
+        background-image: url('https://revistaembarque.com/wp-content/uploads/2014/08/sistema_solar_-_reproducao.jpg');
+    }
+    0% {
+        background-image: url('https://istoeincrivel.com/wp-content/uploads/2019/12/tecido-estampado-universo-galaxia-100-cm-x-70-cm-shorts-estampa-universo-1140x614.jpg');
+    }
+    25% {
+        background-image: url('https://timeline.canaltech.com.br/313573.1400/telescopio-canadense-capta-sinais-repetitivos-de-radio-vindos-do-espaco-sideral.jpg');
+    }
+}
+#cabecalho h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 210px;
+    text-shadow: 7px 10px 3px #737467;
+    font-size: 5vh;
+}
+#cabecalho p {
+    font-size: 2vh;
+    text-shadow: 7px 10px 3px #daddb3;
+    position: relative;
+    top: 215px;
+    left: 75px;
+}
+::selection {
+    background-color: #000000;
+    color: #5b7a60;
+}
+main {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: justify;
+    margin: auto;
+    text-justify: inter-word;
+    max-width: 800px;
+    min-width: 400px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+img {
+    width: 600px;
+    border-radius: 7%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+figcaption {
+    font-size: 12px;
+}
+img:hover {
+    padding: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+p {
+    margin-bottom: 20px;
+}
+h3 {
+    margin-bottom: 15px;
+}
+:root {
+    --tamanho-font-links-cabecalho: 18px;
+}
+#link-home {
+    position: absolute;
+    left: 120px;
+    top: 170px;
+    font-size: var(--tamanho-font-links-cabecalho);
+}
+#link-flex-box {
+    position: relative;
+    left: 230px;
+    top: 107px;
+    font-size: var(--tamanho-font-links-cabecalho);
+}
+#link-contatos {
+    position: relative;
+    left: 450px;
+    top: 80px;
+    font-size: var(--tamanho-font-links-cabecalho);
+}
+.links-cabecalho {
+    color: rgba(66, 255, 66, 0.908);
+    text-shadow: 7px 6px 10px #e3f800;
+}
+/* Estado inicial do link */
+.links-cabecalho:link {
+    text-decoration: none;
+}
+.links-cabecalho:visited {
+    color: #3dff3d;
+}
+/* Quando o mouse passar por cima */
+.links-cabecalho:hover {
+    text-decoration: underline;
+    text-shadow: 2px 12px 2px rgba(66, 255, 66, 0.908);
+}
+/* Na hora que o link for clicado ou ativado */
+.links-cabecalho:active {
+    background-color: #0f75c9;
+    color: #ffffff;
+}
+ul li {
+    list-style: none;
+}
+aside {
+    max-width: 40%;
+    min-width: 20%;
+    position: relative;
+    left: 70px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #505050;
+    color: #ffffff;
+    margin: 0px 340px 15px 340px;
+    padding: 130px 30px 250px 30px; 
+}
+input[type=email] {
+    padding: 10px;
+    max-width: 40%;
+    min-width: 20%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: 2px solid #008000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=email]:focus {
+    padding: 12px;
+    max-width: 70%;
+    min-width: 40%;
+    border: 2px solid #639b98;
+    color: #5b7a60;
+}
+input[type=email]:hover {
+    padding: 14px;
+}
+button {
+    padding: 10px;
+    max-width: 212px;
+    min-width: 106px;
+    color: #0f75c9;
+    border-radius: 7%;
+    border: 2px solid #0f75c9;
+    background-color: #ffffff;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #0f75c9;
+    color: #ffffff;
+    padding: 14px;
+    max-width: 214px;
+    min-width: 108px;
+}
+:root {
+    --pra-baixo: 80px;
+}
+#lucas-email {
+    position: relative;
+    right: 120px;
+}
+#footer-section1 {
+    position: relative;
+    left: 120px;
+    bottom: var(--pra-baixo);
+}
+#footer-section2 {
+    position: relative;
+    left: 100px;
+    bottom: var(--pra-baixo);
+    padding: 0px 32px 0px 48px;
+}
+#footer-section3 {
+    position: relative;
+    left: 170px;
+    bottom: var(--pra-baixo);
+}
+.section-footer {
+    border-right: 2px solid #ffffff;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* Referencias */
+.referencias:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.referencias:visited {
+    color: #3dff3d;
+}
+.referencias:hover {
+    text-decoration-color: underline #5b7a60;
+    text-shadow: 2px 12px 13px #5b7a60;
+}
+.referencias:active {
+    background-color: aquamarine;
+}
+/* Redes socias */
+.redes-sociais:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.redes-sociais:visited {
+    color: #3dff3d;
+}
+.redes-sociais:hover {
+    text-decoration-color: underline #5b7a60;
+    text-shadow: 2px 12px 13px #5b7a60;
+}
+footer {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+    padding-top: 175px;
+    padding-right: 120px;
+    padding-bottom: 180px;
+    padding-left: 122px;
+    display: flex;
+    flex-direction: row;
+    background-color: #505050;
+    color: #ffffff;
+    max-width: 100%;
+    min-width: 50%;
+}
